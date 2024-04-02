@@ -1,0 +1,23 @@
+.login-section{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.login-card{
+    width: 450px;
+}
+.card-header{
+    background-color:var(--secondory-color);
+    color: var(--secondory-light);
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+}
+.btn{
+    border-radius: 10px;
+    width: 100px;
+}
+input::placeholder{
+    color:var(--secondory-light);
+}

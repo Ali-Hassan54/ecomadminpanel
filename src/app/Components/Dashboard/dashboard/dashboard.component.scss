@@ -1,0 +1,35 @@
+.header{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: var(--secondory-color);
+    color: var(--secondory-light);
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+    padding-right: 20px;
+    span{
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+.container-fluid{
+    display: flex;
+    min-height:95vh ;
+    margin: 0;
+    padding: 0;
+    .sidebar{
+        margin: 0;
+        padding: 0;
+        color:#fff;
+        padding: 20px 5px;
+        background:linear-gradient(120deg,var(--secondory-color),rgb(34,25,95));
+        width: 20%;
+        border-top: 1px solid rgba(211,211,211,0.299);
+    }
+    .main{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
