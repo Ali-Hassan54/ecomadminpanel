@@ -1,1 +1,33 @@
-<p>products works!</p>
+<div class="container-fluid p-0">
+    <button class="btn btn-primary  float-end" style="margin-right: 10px;">Add+</button>
+    <div class="product-section">
+        <div class="mat-table mt-4  overflow-auto">
+            <table class=" table table-striped" style="width: 100%;">
+                <thead style="background-color: #ddd;text-align: center;">
+                    <th>S.No</th>
+                    <th>ID</th>
+                    <th>Product</th>
+                    <th>Rate</th>
+                    <th>Quantity</th>
+                    <th>Quantity</th>
+                    <th style="text-align: center;">Action</th>
+                </thead>
+                <tbody>
+                    <tr style="text-align: center;" *ngfor="let item of tableData">
+                        <td>{{item.sno}}</td>
+                        <td>{{item.id}}</td>
+                        <td>{{item.product}}</td>
+                        <td>{{item.rate}}</td>
+                        <td>{{item.quantity}}</td>
+                        <td style="text-align: center;">
+                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-success"><i class="bi bi-pencil-square"></i></button>
+                                <button type="button" class="btn btn-danger"><i class="bi bi-trash3-fill"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

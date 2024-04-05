@@ -10,3 +10,16 @@ body{
     background-color: var(--bg-body);
     color: var(--text-color-light);
 }
+.row{
+    margin: 0;
+}
+th{
+    padding: 15px 0 15px 0;
+}
+td{
+    min-width:200px !important;
+}
+// .table{
+//     overflow-x: auto;
+//    width: 100%;
+// }

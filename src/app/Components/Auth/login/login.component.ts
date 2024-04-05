@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,7 @@ import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 })
 export class LoginComponent {
 loginForm!:FormGroup;
-constructor(private formbuider:FormBuilder){}
+constructor(private formbuider:FormBuilder,private router:Router){}
 ngOnInit():void{
   this.setForm();
 }
@@ -24,16 +25,9 @@ this.loginForm=this.formbuider.group({
 }
 submit()
 {
-  console.log(this.loginForm.value);
-  debugger;
   if(this.loginForm.valid)
   {
-    console.log("True");
-  }
-  else
-  {
-    console.log("False");
-    
+    this.router.navigateByUrl('/dashboard');
   }
 }
 }

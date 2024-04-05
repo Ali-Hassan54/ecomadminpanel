@@ -17,7 +17,7 @@
                     </div>
                     <div class="col-12">
                         <div class="label">Password</div>
-                        <input type="text" class="input form-control" formControlName="password" placeholder="********" />
+                        <input type="passwords" class="input form-control" formControlName="password" placeholder="********" />
                         <div *ngIf="loginForm.controls['password'].hasError('required')&&loginForm.controls['password'].touched" class="text-danger">
                             Password is required.
                         </div>
